@@ -1585,15 +1585,9 @@ names(cc1_data_second)&lt;- c(
     &quot;flower_number&quot;
 )
 cc1_data_second$ovary_area&lt;-cc1_data_second$ovary_width_mm*cc1_data_second$ovary_height_mm
-cc1_data_second$ovary_area</code></pre>
-<pre><code>##  [1] 12.5976 12.9599  7.9864 14.1984 10.0842 12.0357 11.0208
-##  [8] 10.3532 10.1885 10.7463  8.8151 12.7875 10.6362  8.0698
-## [15] 10.6227 10.5625  8.1540  9.1047  8.2026 11.1456 12.9030
-## [22]  9.6652  8.7406 10.4664 10.4346 10.6400 12.6270 12.2078
-## [29] 12.9687  7.5240 10.6743  5.6637 11.4460  9.8272 10.7415
-## [36] 11.5340  9.2610 10.8192 11.5381 11.0143  7.8228  8.4372
-## [43] 10.3874  9.4805 12.0204  9.5040</code></pre>
-<pre class="r"><code>cc1_data&lt;-cc1_data_second </code></pre>
+cc1_data_second$ovary_area
+
+cc1_data&lt;-cc1_data_second </code></pre>
 <!--Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output. -->
 <pre class="r"><code>class(cc1_data)
 dim(cc1_data)
@@ -1651,10 +1645,8 @@ directory] (<a href="https://species.wikimedia.org/wiki/Solanum_pimpinellifolium
 1. Edit the `README.md` in your repository (Chapter 6, *README.md*): add a **header** with the repository name and one sentence saying what the repository contains.
 1. Make sure the repository contains the `.Rmd`, `data/A1_Data_Excel.csv`, `images/` with your photo, and the knitted `.html`, and that everything is **committed and pushed**.
 1. Paste the **SHA** of your final commit (Chapter 6, *Timeline*; the 7-character code shown beside each commit on GitHub) below, formatted as in-line code with back-ticks. -->
-<p>Final commit SHA: <code>76582af</code></p>
-</div>
-<div id="do-this-last" class="section level1 unnumbered">
-<h1 class="unnumbered">DO THIS LAST</h1>
+<p>Final commit SHA: <code>e5d5651</code></p>
+<!--# DO THIS LAST {-} -->
 <!--When your document is finished, knitted and pushed to GitHub, copy and paste this into the R Console to stop positpal and create your coding log. **Do not include it as a code chunk.**
 
 ```
