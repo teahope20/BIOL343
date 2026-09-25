@@ -153,16 +153,16 @@ Source: [Wikispecies:free species directory] (https://species.wikimedia.org/wiki
 1. Make sure the repository contains the `.Rmd`, `data/A1_Data_Excel.csv`, `images/` with your photo, and the knitted `.html`, and that everything is **committed and pushed**.
 1. Paste the **SHA** of your final commit (Chapter 6, *Timeline*; the 7-character code shown beside each commit on GitHub) below, formatted as in-line code with back-ticks. -->
 
-Final commit SHA: `bf786b6`
+Final commit SHA: `76582af`
 
 
 # DO THIS LAST {-}
 
-When your document is finished, knitted and pushed to GitHub, copy and paste this into the R Console to stop positpal and create your coding log. **Do not include it as a code chunk.**
+<!--When your document is finished, knitted and pushed to GitHub, copy and paste this into the R Console to stop positpal and create your coding log. **Do not include it as a code chunk.**
 
 ```
 positpal::stop_capture()
 positpal::export_capture()
 ```
-
+-->
 <!--`export_capture()` prints the name and location of the `my-capture-YYYYMMDD-HHMMSS.zip` it creates beside this file. **Each group member** uploads their own `.zip` to the **"CC2 — Coding Log (individual)"** dropbox on OnQ; the group's `.Rmd` and knitted `.html` go to your section's **TUT02-CC2** or **TUT03-CC2** folder. Submissions without the log are incomplete. If `export_capture()` fails, zip the `.capture` folder yourself and upload that instead. Do not commit the `.capture` folder or the `.zip` to GitHub (add a `.capture/` line to your repository's `.gitignore`). -->
