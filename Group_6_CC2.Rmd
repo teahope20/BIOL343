@@ -155,7 +155,8 @@ Source: [Wikispecies:free species directory] (https://species.wikimedia.org/wiki
 1. Make sure the repository contains the `.Rmd`, `data/A1_Data_Excel.csv`, `images/` with your photo, and the knitted `.html`, and that everything is **committed and pushed**.
 1. Paste the **SHA** of your final commit (Chapter 6, *Timeline*; the 7-character code shown beside each commit on GitHub) below, formatted as in-line code with back-ticks. -->
 
-Final commit SHA: 
+Final commit SHA: `bf786b6`
+
 
 # DO THIS LAST {-}
 
