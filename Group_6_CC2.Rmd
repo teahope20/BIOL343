@@ -1,6 +1,6 @@
 ---
 title: "BIOL343 Coding Challenge 2"
-author: "Group #6, Tea Hope - 20459579 "
+author: "Group #6, Téa Hope - 20459579"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output: 
     html_document:
@@ -89,7 +89,7 @@ cc1_data<-cc1_data_second
 
 <!--Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output. -->
 
-```{r inspect, eval=FALSE, echo=TRUE}
+```{r inspect, eval=FALSE}
 class(cc1_data)
 dim(cc1_data)
 str(cc1_data)
@@ -97,7 +97,6 @@ head(cc1_data)
 tail(cc1_data)
 ```
 
-#why is none of this printing?????/ huge problems here but not sure what part is wrong? 
 # Equation
 
 <!--Write the formula you used for ovary area as a **full-line equation** in LaTeX (Chapter 5, *Equations*), using `\times` for multiplication. Then, in a sentence of ordinary text, state its units using an **in-line equation** with a superscript. -->
@@ -113,15 +112,14 @@ The units of ovary area are $mm^2$, with ovary height and ovary width as mm
 <!--**a.** In the chunk below, calculate the mean `ovary_area` for each `population_type` with `aggregate()` (Chapter 3, *Other Functions*) and save the result as `area_means`. This chunk should run but be **completely hidden** in the report. -->
 
 ```{r area-means, include=FALSE}
-area_means<-aggregate(ovary_area~population_type, 
-                        data=cc1_data, 
-                        FUN=mean)
-
+area_means <- aggregate (ovary_area ~ population_type, data=cc1_data, mean)
+area_means
 ```
 
 <!--**b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**. -->
 
 ```{r area-table, echo=FALSE}
+library(knitr)
 knitr::kable(area_means, caption = "Mean Ovary Area by Population Type")
 ```
 
@@ -130,10 +128,10 @@ knitr::kable(area_means, caption = "Mean Ovary Area by Population Type")
 <!--Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4), choosing a sensible `binwidth` and using `facet_wrap()` to give each `population_type` its own panel, `labs()` for axis labels with units and a title, and `theme_classic()` (Chapter 7). This chunk should show the **graph but not the code**, and it should not print package start-up messages (see the chunk header used under *Embed Graphs* in Chapter 5).-->
 
 ```{r area-histogram, echo=FALSE, message = FALSE} 
-library(ggplot2)
 
-plot1<-ggplot(cc1_data, aes(x= ovary_area)) + geom_histogram(binwidth=5) + 
-facet_wrap(~ population_type) +
+library(ggplot2)
+ggplot(cc1_data, aes(x= ovary_area)) + geom_histogram(binwidth=0.8) + 
+facet_wrap(population_type ~.) +
 labs(title = "Distribution of Ovary Area by Population Type", x ="Ovary Area(mm^2)", y = "Frequency") + theme_classic()
 
 ```
