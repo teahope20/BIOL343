@@ -1572,22 +1572,6 @@ Before you run it: open the project folder for this challenge in Positron (*File
 </table>
 <!--# Import and clean the data -->
 <!--Copy `A1_Data_Excel.csv` from your Coding Challenge 1 project into this project's `data` folder. In the chunk below, import it with `read.csv()`, keep the appropriate rows and columns (as you did in Coding Challenge 1), and add the `ovary_area` column (Chapter 3, *New Columns*). Save the cleaned data as `cc1_data`. -->
-<pre class="r"><code>cc1_data_first &lt;- read.csv(&quot;data/A1_Data_Excel.csv&quot;)
-cc1_data_second &lt;- cc1_data_first[1:46, 1:8] 
-names(cc1_data_second)&lt;- c(
-    &quot;population_type&quot;, 
-    &quot;population_name&quot;, 
-    &quot;latitude&quot;,
-    &quot;longitude&quot;,
-    &quot;ovary_width_mm&quot;,
-    &quot;ovary_height_mm&quot;, 
-    &quot;average_august_temperature&quot;,
-    &quot;flower_number&quot;
-)
-cc1_data_second$ovary_area&lt;-cc1_data_second$ovary_width_mm*cc1_data_second$ovary_height_mm
-cc1_data_second$ovary_area
-
-cc1_data&lt;-cc1_data_second </code></pre>
 <!--Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output. -->
 <pre class="r"><code>class(cc1_data)
 dim(cc1_data)
@@ -1645,7 +1629,7 @@ directory] (<a href="https://species.wikimedia.org/wiki/Solanum_pimpinellifolium
 1. Edit the `README.md` in your repository (Chapter 6, *README.md*): add a **header** with the repository name and one sentence saying what the repository contains.
 1. Make sure the repository contains the `.Rmd`, `data/A1_Data_Excel.csv`, `images/` with your photo, and the knitted `.html`, and that everything is **committed and pushed**.
 1. Paste the **SHA** of your final commit (Chapter 6, *Timeline*; the 7-character code shown beside each commit on GitHub) below, formatted as in-line code with back-ticks. -->
-<p>Final commit SHA: <code>e5d5651</code></p>
+<p>Final commit SHA: <code>1f7bac1</code></p>
 <!--# DO THIS LAST {-} -->
 <!--When your document is finished, knitted and pushed to GitHub, copy and paste this into the R Console to stop positpal and create your coding log. **Do not include it as a code chunk.**
 

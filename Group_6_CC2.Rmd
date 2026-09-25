@@ -67,7 +67,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!--Copy `A1_Data_Excel.csv` from your Coding Challenge 1 project into this project's `data` folder. In the chunk below, import it with `read.csv()`, keep the appropriate rows and columns (as you did in Coding Challenge 1), and add the `ovary_area` column (Chapter 3, *New Columns*). Save the cleaned data as `cc1_data`. -->
 
-```{r import-clean, eval= FALSE}
+```{r import-clean, include = FALSE}
 cc1_data_first <- read.csv("data/A1_Data_Excel.csv")
 cc1_data_second <- cc1_data_first[1:46, 1:8] 
 names(cc1_data_second)<- c(
@@ -153,7 +153,7 @@ Source: [Wikispecies:free species directory] (https://species.wikimedia.org/wiki
 1. Make sure the repository contains the `.Rmd`, `data/A1_Data_Excel.csv`, `images/` with your photo, and the knitted `.html`, and that everything is **committed and pushed**.
 1. Paste the **SHA** of your final commit (Chapter 6, *Timeline*; the 7-character code shown beside each commit on GitHub) below, formatted as in-line code with back-ticks. -->
 
-Final commit SHA: `e5d5651`
+Final commit SHA: `1f7bac1`
 
 
 <!--# DO THIS LAST {-} -->
