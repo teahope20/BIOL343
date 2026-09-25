@@ -1,3 +1,4 @@
 # BIOL343
-This is the github page for my statistics class!
-#this is a header
+This repository contains all the figures, data, files, and knitted report for Coding Challenge 2.
+
+
